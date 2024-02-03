@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://127.0.0.1:5500/EDC%20PROJECT%20(birthday%20countdown)/structure.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRTHDAY COUNTDOWN</title>
+    <link rel="stylesheet" href="./BIRTHDAY COUNTDOWN FINAL_files/style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="data">
+            <h1>BIRTHDAY COUNTER</h1>
+            <div id="person" class="details"><span>Enter your name :</span>
+                <input type="text" id="name" placeholder="eg.Pudi Sravan" style="size: 55px;" fdprocessedid="m2zowq">
+            </div>
+            <div id="DOB" class="details"><span>Enter your D.O.B :</span>
+                <input type="date" id="dob-input" style="size: 55px;">
+        </div>
+        <button id="start" fdprocessedid="zh4bk9">Start countdown</button>
+     </div>
+    
+    <div class="countdown" id="countdown" style="display: none;">
+        <h1>LET'S PARTYY IN!!!</h1>
+        <div class="time">
+            <span id="days" style="font-size: 55px; font-weight: 350;">00</span>
+            <p style="font-size: 15px; font-weight: 100;">Days</p>
+        </div>
+        <div class="time">
+            <span id="hours" style="font-size: 55px; font-weight: 350;">00</span>
+            <p style="font-size: 15px; font-weight: 100;">Hours</p>
+        </div>
+        <div class="time">
+            <span id="minutes" style="font-size: 55px; font-weight: 350;">00</span>
+            <p style="font-size: 15px; font-weight: 100;">Minutes</p>
+        </div>
+        <div class="time">
+            <span id="seconds" style="font-size: 55px; font-weight: 350;">00</span>
+            <p style="font-size: 15px; font-weight: 100;">Seconds</p>
+        </div>
+        
+    </div>
+
+<script src="./BIRTHDAY COUNTDOWN FINAL_files/functions.js" mc_processed="1"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div><script src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/scripts/page_crypto_mining.js" id="SCRIPT_46a2870c-afcf-47e5-b32e-1fd85ed6e398" randuuid="0d35b9d9-c50b-4e5a-840e-caa11c4b4a9e" type="text/javascript" mc_processed="1"></script></body></html>
